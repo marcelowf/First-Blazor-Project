@@ -1,4 +1,4 @@
-public class CarroCombustao
+public class BaseJsonCarroCombustao
 {
     public string Marca { get; set; }
     public string Modelo { get; set; }

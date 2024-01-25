@@ -22,16 +22,24 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/VOLVO_ESTAGIO/DOTNET/VOLVO_TRABALHO/VOLVO_FRONT/Pages/GetCarroCombustao.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2V0Q2Fycm9Db21idXN0YW8ucmF6b3I=
+[c:/VOLVO_ESTAGIO/DOTNET/VOLVO_TRABALHO/VOLVO_FRONT/Pages/CarroCombustao/DeleteCarroCombustao.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fycm9Db21idXN0YW9cRGVsZXRlQ2Fycm9Db21idXN0YW8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/VOLVO_ESTAGIO/DOTNET/VOLVO_TRABALHO/VOLVO_FRONT/Pages/CarroCombustao/GetCarroCombustao.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fycm9Db21idXN0YW9cR2V0Q2Fycm9Db21idXN0YW8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/VOLVO_ESTAGIO/DOTNET/VOLVO_TRABALHO/VOLVO_FRONT/Pages/CarroCombustao/PostCarroCombustao.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fycm9Db21idXN0YW9cUG9zdENhcnJvQ29tYnVzdGFvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/VOLVO_ESTAGIO/DOTNET/VOLVO_TRABALHO/VOLVO_FRONT/Pages/CarroCombustao/PutCarroCombustao.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fycm9Db21idXN0YW9cUHV0Q2Fycm9Db21idXN0YW8ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [c:/VOLVO_ESTAGIO/DOTNET/VOLVO_TRABALHO/VOLVO_FRONT/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[c:/VOLVO_ESTAGIO/DOTNET/VOLVO_TRABALHO/VOLVO_FRONT/Pages/PostCarroCombustao.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9zdENhcnJvQ29tYnVzdGFvLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [c:/VOLVO_ESTAGIO/DOTNET/VOLVO_TRABALHO/VOLVO_FRONT/Shared/MainLayout.razor]

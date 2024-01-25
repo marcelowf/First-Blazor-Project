@@ -14,12 +14,22 @@
         </li>
         <li class="nav-item px-3">
             <NavLink class="nav-link" href="GetCarroCombustao">
-                <span class="oi oi-plus" aria-hidden="true"></span> Listar Carro Combustao
+                <span class="oi oi-plus" aria-hidden="true"></span> Listar Carros
             </NavLink>
         </li>
         <li class="nav-item px-3">
             <NavLink class="nav-link" href="PostCarroCombustao">
-                <span class="oi oi-plus" aria-hidden="true"></span> Criar Carro Combustao
+                <span class="oi oi-plus" aria-hidden="true"></span> Criar Carro
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="DeleteCarroCombustao">
+                <span class="oi oi-plus" aria-hidden="true"></span> Deletar Carro
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="PutCarroCombustao">
+                <span class="oi oi-plus" aria-hidden="true"></span> Alterar Carro
             </NavLink>
         </li>
     </ul>
@@ -27,7 +37,6 @@
 
 @code {
     private bool collapseNavMenu = true;
-
     private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
 
     private void ToggleNavMenu()

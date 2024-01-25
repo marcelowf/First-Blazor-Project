@@ -44,7 +44,7 @@
 </div>
 
 @code {
-    private CarroCombustao novoCarro = new CarroCombustao();
+    private BaseJsonCarroCombustao novoCarro = new BaseJsonCarroCombustao();
 
     protected override void OnInitialized()
     {
@@ -77,22 +77,17 @@
 
         base.OnInitialized();
     }
+    private readonly ApiService apiService = new ApiService(new HttpClient());
 
     private async Task CriarCarro()
     {
-        var httpClient = new HttpClient();
-
-        var content = new StringContent(System.Text.Json.JsonSerializer.Serialize(novoCarro), System.Text.Encoding.UTF8, "application/json");
-
-        var response = await httpClient.PostAsync("http://localhost:5297/CarroCombustao", content);
-
-        if (response.IsSuccessStatusCode)
+        try
         {
-            Console.WriteLine("Carro criado com sucesso!");
+            var success = await apiService.PostCarroCombustao(novoCarro);
         }
-        else
+        catch(Exception)
         {
-            Console.WriteLine($"Erro ao criar o carro. Status Code: {response.StatusCode}");
+            Console.WriteLine("Erro ao criar o Carro.");
         }
     }
 }

@@ -1,0 +1,81 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\VOLVO_ESTAGIO\\DOTNET\\VOLVO_TRABALHO\\VOLVO_FRONT\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\VOLVO_ESTAGIO\\DOTNET\\VOLVO_TRABALHO\\VOLVO_FRONT\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\VOLVO_ESTAGIO\\DOTNET\\VOLVO_TRABALHO\\VOLVO_FRONT\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\VOLVO_ESTAGIO\\DOTNET\\VOLVO_TRABALHO\\VOLVO_FRONT\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\VOLVO_ESTAGIO\\DOTNET\\VOLVO_TRABALHO\\VOLVO_FRONT\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "C:\\VOLVO_ESTAGIO\\DOTNET\\VOLVO_TRABALHO\\VOLVO_FRONT\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\VOLVO_ESTAGIO\\DOTNET\\VOLVO_TRABALHO\\VOLVO_FRONT\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\VOLVO_ESTAGIO\\DOTNET\\VOLVO_TRABALHO\\VOLVO_FRONT\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\VOLVO_ESTAGIO\\DOTNET\\VOLVO_TRABALHO\\VOLVO_FRONT\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\VOLVO_ESTAGIO\\DOTNET\\VOLVO_TRABALHO\\VOLVO_FRONT\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\VOLVO_ESTAGIO\\DOTNET\\VOLVO_TRABALHO\\VOLVO_FRONT\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\VOLVO_ESTAGIO\\DOTNET\\VOLVO_TRABALHO\\VOLVO_FRONT\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\VOLVO_ESTAGIO\\DOTNET\\VOLVO_TRABALHO\\VOLVO_FRONT\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\VOLVO_ESTAGIO\\DOTNET\\VOLVO_TRABALHO\\VOLVO_FRONT\\wwwroot\\images\\Marcelo.png",
+      "PackagePath": "staticwebassets\\images\\Marcelo.png"
+    },
+    {
+      "Id": "C:\\VOLVO_ESTAGIO\\DOTNET\\VOLVO_TRABALHO\\VOLVO_FRONT\\wwwroot\\images\\Pedro.png",
+      "PackagePath": "staticwebassets\\images\\Pedro.png"
+    },
+    {
+      "Id": "obj\\Debug\\netcoreapp8.0\\staticwebassets\\msbuild.VOLVO_FRONT.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\netcoreapp8.0\\staticwebassets\\msbuild.build.VOLVO_FRONT.props",
+      "PackagePath": "build\\VOLVO_FRONT.props"
+    },
+    {
+      "Id": "obj\\Debug\\netcoreapp8.0\\staticwebassets\\msbuild.buildMultiTargeting.VOLVO_FRONT.props",
+      "PackagePath": "buildMultiTargeting\\VOLVO_FRONT.props"
+    },
+    {
+      "Id": "obj\\Debug\\netcoreapp8.0\\staticwebassets\\msbuild.buildTransitive.VOLVO_FRONT.props",
+      "PackagePath": "buildTransitive\\VOLVO_FRONT.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

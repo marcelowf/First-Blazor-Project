@@ -1,0 +1,39 @@
+﻿@page "/"
+
+<h1>Projeto Final de Estágio na VOLVO</h1>
+
+<p>Bem-vindo ao meu primeiro aplicativo web em Blazor com foco em implementar meu projeto final do programa de estágio VOLVO.</p>
+
+<h2>Tabela dos integrantes</h2>
+
+@code {
+    List<Aluno> alunos = new List<Aluno>
+    {
+        new Aluno { Nome = "Marcelo Wzorek", ImagemUrl = "images/Marcelo.png" },
+        new Aluno { Nome = "Pedro Lelis", ImagemUrl = "images/Pedro.png" }
+    };
+    
+    public class Aluno
+    {
+        public string Nome { get; set; }
+        public string ImagemUrl { get; set; }
+    }
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome do Aluno</th>
+            <th>Foto</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var aluno in alunos)
+        {
+            <tr>
+                <td>@aluno.Nome</td>
+                <td><img src="@aluno.ImagemUrl" alt="Foto do Aluno" style="max-width: 100px; max-height: 100px;"/></td>
+            </tr>
+        }
+    </tbody>
+</table>

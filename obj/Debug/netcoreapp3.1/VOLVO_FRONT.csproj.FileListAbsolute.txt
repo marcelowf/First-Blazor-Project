@@ -1,0 +1,15 @@
+C:\VOLVO_ESTAGIO\DOTNET\VOLVO_TRABALHO\VOLVO_FRONT\obj\Debug\netcoreapp3.1\VOLVO_FRONT.GeneratedMSBuildEditorConfig.editorconfig
+C:\VOLVO_ESTAGIO\DOTNET\VOLVO_TRABALHO\VOLVO_FRONT\obj\Debug\netcoreapp3.1\VOLVO_FRONT.AssemblyInfoInputs.cache
+C:\VOLVO_ESTAGIO\DOTNET\VOLVO_TRABALHO\VOLVO_FRONT\obj\Debug\netcoreapp3.1\VOLVO_FRONT.AssemblyInfo.cs
+C:\VOLVO_ESTAGIO\DOTNET\VOLVO_TRABALHO\VOLVO_FRONT\obj\Debug\netcoreapp3.1\VOLVO_FRONT.csproj.CoreCompileInputs.cache
+C:\VOLVO_ESTAGIO\DOTNET\VOLVO_TRABALHO\VOLVO_FRONT\obj\Debug\netcoreapp3.1\VOLVO_FRONT.MvcApplicationPartsAssemblyInfo.cache
+C:\VOLVO_ESTAGIO\DOTNET\VOLVO_TRABALHO\VOLVO_FRONT\obj\Debug\netcoreapp3.1\VOLVO_FRONT.RazorComponent.input.cache
+C:\VOLVO_ESTAGIO\DOTNET\VOLVO_TRABALHO\VOLVO_FRONT\obj\Debug\netcoreapp3.1\RazorDeclaration\App.razor.g.cs
+C:\VOLVO_ESTAGIO\DOTNET\VOLVO_TRABALHO\VOLVO_FRONT\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Counter.razor.g.cs
+C:\VOLVO_ESTAGIO\DOTNET\VOLVO_TRABALHO\VOLVO_FRONT\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\FetchData.razor.g.cs
+C:\VOLVO_ESTAGIO\DOTNET\VOLVO_TRABALHO\VOLVO_FRONT\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Index.razor.g.cs
+C:\VOLVO_ESTAGIO\DOTNET\VOLVO_TRABALHO\VOLVO_FRONT\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\MainLayout.razor.g.cs
+C:\VOLVO_ESTAGIO\DOTNET\VOLVO_TRABALHO\VOLVO_FRONT\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\NavMenu.razor.g.cs
+C:\VOLVO_ESTAGIO\DOTNET\VOLVO_TRABALHO\VOLVO_FRONT\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
+C:\VOLVO_ESTAGIO\DOTNET\VOLVO_TRABALHO\VOLVO_FRONT\obj\Debug\netcoreapp3.1\RazorDeclaration\_Imports.razor.g.cs
+C:\VOLVO_ESTAGIO\DOTNET\VOLVO_TRABALHO\VOLVO_FRONT\obj\Debug\netcoreapp3.1\VOLVO_FRONT.RazorComponent.output.cache

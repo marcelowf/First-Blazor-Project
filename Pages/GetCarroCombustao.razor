@@ -1,0 +1,28 @@
+﻿@page "/GetCarroCombustao"
+@inject ApiService ApiService
+
+<h3>Modelos de Carros a Combustão:</h3>
+
+@if (modelos != null)
+{
+    foreach (var modelo in modelos)
+    {
+        <p>@modelo</p>
+    }
+}
+else
+{
+    <p>Carregando...</p>
+}
+
+<button class="btn btn-primary" @onclick="CarregarModelos">Carregar Modelos</button>
+
+@code {
+    private List<string> modelos;
+
+    private async Task CarregarModelos()
+    {
+        modelos = await ApiService.GetModelosCarrosCombustao();
+    }
+}
+

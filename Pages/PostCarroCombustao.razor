@@ -1,0 +1,98 @@
+@page "/PostCarroCombustao"
+
+<h3>Criar Carro a Combustão</h3>
+
+<div class="container mt-4">
+    <form>
+        <div class="mb-3">
+            <label for="modelo" class="form-label">Modelo:</label>
+            <input type="text" class="form-control" id="modelo" @bind="novoCarro.Modelo" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="anoFabricacao" class="form-label">Ano Fabricação:</label>
+            <input type="text" class="form-control" id="anoFabricacao" @bind="novoCarro.AnoFabricacao" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="preco" class="form-label">Preço:</label>
+            <input type="text" class="form-control" id="preco" @bind="novoCarro.Preco" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="placa" class="form-label">Placa:</label>
+            <input type="text" class="form-control" id="placa" @bind="novoCarro.Placa" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="cor" class="form-label">Cor:</label>
+            <input type="text" class="form-control" id="cor" @bind="novoCarro.Cor" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="numeroPortas" class="form-label">Número de Portas:</label>
+            <input type="text" class="form-control" id="numeroPortas" @bind="novoCarro.NumeroPortas" required>
+        </div>
+
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="tetoSolar" @bind="novoCarro.TetoSolar">
+            <label class="form-check-label" for="tetoSolar">Teto Solar</label>
+        </div>
+
+        <button type="button" class="btn btn-primary" @onclick="CriarCarro">Criar Carro</button>
+    </form>
+</div>
+
+@code {
+    private CarroCombustao novoCarro = new CarroCombustao();
+
+    protected override void OnInitialized()
+    {
+        novoCarro.Marca = "Volvo";
+        novoCarro.Quilometragem = 0;
+        novoCarro.MotorSelecionado = new Motor();
+        novoCarro.TanqueSelecionado = new Tanque();
+        novoCarro.MotorSelecionado.Modelo = "MotorCombustao1";
+        novoCarro.MotorSelecionado.Potencia = 0.06;
+        novoCarro.TanqueSelecionado.Modelo = "Tanque1";
+        novoCarro.TanqueSelecionado.CapacidadeL = 40;
+
+        novoCarro.MotoresDisponiveis = new Motor[]
+        {
+            new Motor { Modelo = "MotorCombustao1", Potencia = 0.06 },
+            new Motor { Modelo = "MotorCombustao2", Potencia = 0.07 },
+            new Motor { Modelo = "MotorCombustao3", Potencia = 0.08 },
+            new Motor { Modelo = "MotorCombustao4", Potencia = 0.09 },
+            new Motor { Modelo = "MotorCombustao5", Potencia = 0.10 }
+        };
+
+        novoCarro.TanquesDisponiveis = new Tanque[]
+        {
+            new Tanque { Modelo = "Tanque1", CapacidadeL = 40 },
+            new Tanque { Modelo = "Tanque2", CapacidadeL = 50 },
+            new Tanque { Modelo = "Tanque3", CapacidadeL = 60 },
+            new Tanque { Modelo = "Tanque4", CapacidadeL = 70 },
+            new Tanque { Modelo = "Tanque5", CapacidadeL = 80 }
+        };
+
+        base.OnInitialized();
+    }
+
+    private async Task CriarCarro()
+    {
+        var httpClient = new HttpClient();
+
+        var content = new StringContent(System.Text.Json.JsonSerializer.Serialize(novoCarro), System.Text.Encoding.UTF8, "application/json");
+
+        var response = await httpClient.PostAsync("http://localhost:5297/CarroCombustao", content);
+
+        if (response.IsSuccessStatusCode)
+        {
+            Console.WriteLine("Carro criado com sucesso!");
+        }
+        else
+        {
+            Console.WriteLine($"Erro ao criar o carro. Status Code: {response.StatusCode}");
+        }
+    }
+}

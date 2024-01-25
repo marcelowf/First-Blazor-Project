@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\VOLVO_FRONT.props" />
+</Project>

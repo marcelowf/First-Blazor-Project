@@ -1,6 +1,8 @@
+@inject IJSRuntime JSRuntime
+
 @page "/DeleteCarroCombustao"
 
-<h3>Excluir Carro a Combustão</h3>
+<h3>Excluir um Carro</h3><br>
 
 <label for="modelo" class="form-label">Placa do carro que será deletado:</label><br>
 <input type="text" class="form-control" id="modelo" @bind="Placa" required><br>
@@ -15,7 +17,14 @@
     {
         try
         {
-            var success = await apiService.DeleteCarroCombustao(Placa);
+            if(await apiService.DeleteCarroCombustao(Placa))
+            {
+                await JSRuntime.InvokeVoidAsync("alert", "Carro deletado com sucesso!");
+            }
+            else
+            {
+                Console.WriteLine($"Erro ao deletar o Carro de palca: {Placa}.");
+            }
         }
         catch(Exception)
         {

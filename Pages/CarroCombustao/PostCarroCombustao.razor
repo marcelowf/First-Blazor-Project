@@ -1,6 +1,8 @@
+@inject IJSRuntime JSRuntime
+
 @page "/PostCarroCombustao"
 
-<h3>Criar Carro a Combustão</h3>
+<h3>Criar um novo Carro</h3><br>
 
 <div class="container mt-4">
     <form>
@@ -83,7 +85,14 @@
     {
         try
         {
-            var success = await apiService.PostCarroCombustao(novoCarro);
+            if(await apiService.PostCarroCombustao(novoCarro))
+            {
+                await JSRuntime.InvokeVoidAsync("alert", "Carro criado com sucesso!");
+            }
+            else
+            {
+                Console.WriteLine($"Erro ao criar o Carro de modelo {novoCarro.Modelo}.");
+            }
         }
         catch(Exception)
         {

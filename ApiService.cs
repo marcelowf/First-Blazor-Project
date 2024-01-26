@@ -47,7 +47,7 @@ public class ApiService
         }
     }
 
-    public async Task<bool> PutCarroCombustao(string placa, BaseJsonCarroCombustao carroAtualizado)
+    public async Task<bool> PutCarroCombustao(string placa, BaseJsonPutCarroCombustao carroAtualizado)
     {
         try
         {

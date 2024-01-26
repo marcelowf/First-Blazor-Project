@@ -1,0 +1,74 @@
+@inject IJSRuntime JSRuntime
+
+@page "/PutCarroCombustao"
+
+<h3>Alterar um Carro</h3><br>
+
+<div class="container mt-4">
+    <form>        
+        <div class="mb-3">
+            <label for="placa" class="form-label">Placa do carro a ser modificado:</label>
+            <input type="text" class="form-control" id="placa" @bind="baseCarroJSON.Placa" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="modelo" class="form-label">Nova Marca:</label>
+            <input type="text" class="form-control" id="modelo" @bind="baseCarroJSON.Marca" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="modelo" class="form-label">Novo Modelo:</label>
+            <input type="text" class="form-control" id="modelo" @bind="baseCarroJSON.Modelo" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="anoFabricacao" class="form-label">Novo Ano Fabricação:</label>
+            <input type="text" class="form-control" id="anoFabricacao" @bind="baseCarroJSON.AnoFabricacao" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="preco" class="form-label">Novo Preço:</label>
+            <input type="text" class="form-control" id="preco" @bind="baseCarroJSON.Preco" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="cor" class="form-label">Nova Cor:</label>
+            <input type="text" class="form-control" id="cor" @bind="baseCarroJSON.Cor" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="numeroPortas" class="form-label">Novo Número de Portas:</label>
+            <input type="text" class="form-control" id="numeroPortas" @bind="baseCarroJSON.NumeroPortas" required>
+        </div>
+
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="tetoSolar" @bind="baseCarroJSON.TetoSolar">
+            <label class="form-check-label" for="tetoSolar">Teto Solar</label>
+        </div>
+
+        <button type="button" class="btn btn-primary" @onclick="AlterarCarro">Alterar Carro</button>
+    </form>
+</div>
+
+@code {
+    private BaseJsonPutCarroCombustao baseCarroJSON = new BaseJsonPutCarroCombustao();
+    private readonly ApiService apiService = new ApiService(new HttpClient());
+    private async Task AlterarCarro()
+    {
+        try
+        {
+            if (await apiService.PutCarroCombustao(baseCarroJSON.Placa, baseCarroJSON))
+            {
+                await JSRuntime.InvokeVoidAsync("alert", "Carro alterado com sucesso!");
+            }
+            else
+            {
+                Console.WriteLine($"Erro ao alterar o Carro de placa {baseCarroJSON.Placa}.");
+            }
+        }
+        catch(Exception)
+        {
+            Console.WriteLine($"Erro ao alterar o Carro de placa {baseCarroJSON.Placa}.");
+        }
+    }
+}
